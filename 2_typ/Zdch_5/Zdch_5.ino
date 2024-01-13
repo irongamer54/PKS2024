@@ -12,7 +12,7 @@ float get_temp(){ //получаем температуру
     float v_out = map(analogRead(T_PIN),0,4095,0,3.3); // падение напряжения на терморезисторе
     float r_term = (T_RES0 * v_out)/(V_IN-v_out);
     float temp = B_COF * (T0 + 273,15) / (B_COF + log(float(r_term / T_RES0)) * (T0 + 273,15));
-    return temp;
+    return temp-273.15;;
 }
 
 void Heat(){ //нагрев
