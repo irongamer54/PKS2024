@@ -1,7 +1,7 @@
 #define DEBAG 0
 #define IS_SER_NEED 0//нужно ли получать ключ в Serial (ограничивает P и Q, k и s <10000)
 
-#define P 619 //максимум без Serial P=619 Q=439
+#define P 619 //максимум без Serial P=619 Q=439 для esp8266
 #define Q 439
 #define M 10
 

@@ -40,7 +40,7 @@ def new_key(p,q):
         d+=1
     return [k,d,s]
 
-keys=new_key(107,89)
+keys=new_key(107,89 )
 k,d,s=keys[0],keys[1],keys[2]
 M=10
 print(k,d,s)
